@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+.ModalMsg {
+  position: static;
+  font-family: Almarai;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+  color: #212121;
+}
+
+.modalDescr {
+  font-family: Almarai;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  margin-top: 20px;
+  text-align: center;
+  color: #212121;
+  white-space: normal;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Tablet */
+  .container {
+    width: 370px;
+    height: 180px;
+  }
+  .modalDescr {
+    white-space: normal;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Tablet */
+  .container {
+    width: 320px;
+    height: 180px;
+  }
+  .modalDescr {
+    white-space: nowrap;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* Smart phone (portrait) */
+  .container {
+    width: 200px;
+    height: 200px;
+  }
+  .modalDescr {
+    white-space: normal;
+    font-size: 14px;
+  }
+}

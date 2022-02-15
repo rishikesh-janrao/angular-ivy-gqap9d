@@ -1,0 +1,41 @@
+.congrats {
+  /* image 1 */
+
+  position: static;
+  width: 90px;
+  height: 90px;
+  left: 223px;
+  top: 64px;
+
+  background: url(image.png);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 32px 0px;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Tablet */
+  .congrats {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Smart phone (portrait) */
+  .congrats {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Smart phone (portrait) */
+  .congrats {
+    width: 90px;
+    height: 90px;
+  }
+}
